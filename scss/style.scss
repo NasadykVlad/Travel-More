@@ -195,3 +195,27 @@
         }
     }
 }
+
+.option {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    padding: 3% 0;
+    & article {
+        width: 21%;
+        padding: 3% 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        & h2 {
+            text-align: center;
+            font-family: 'Aleo', serif;
+            width: 100%;
+            font-size: 36px;
+            font-weight: 400;
+            color: #e8e8e8;
+            margin-top: 9%;
+        }
+    }
+}
