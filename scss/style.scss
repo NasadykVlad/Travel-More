@@ -27,13 +27,13 @@
         letter-spacing: 0.1em;
         color: #ffffff;
     }
-    & p {
+    &__p-top {
         width: 100%;
         font-size: 22px;
         font-weight: 400;
         letter-spacing: 0.31em;
         color: #ffffff;
-        margin-top: .6%;
+        margin-top: .4%;
     }
     & form {
         display: flex;
@@ -81,9 +81,117 @@
         font-weight: 400;
         letter-spacing: 0.2em;
         color: #ffffff;
-        margin-top: 8%;
+        margin-top: 6%;
     }
     &__scroll {
         margin-top: 1%;
+        margin-bottom: 4%;
+    }
+    &__nav {
+        display: flex;
+        width: 100%;
+        background-color: #5474fd;
+        padding: 2% 0;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        & p {
+            font-family: 'Josefin Sans';
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #ffffff;
+        }
+    }
+    & nav {
+        width: 37%;
+        & ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            & li {
+                & a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    &:hover {
+                        color: #151515;
+                        transition: .4s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.places {
+    width: 100%;
+    padding: 9% 5%;
+    background-image: url("../img/places.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__text {
+        display: flex;
+        flex-wrap: wrap;
+        width: 41%;
+        padding-top: 2%;
+        & h2 {
+            font-family: 'Aleo', serif;
+            width: 100%;
+            font-size: 36px;
+            font-weight: 400;
+            color: #ffffff;
+            margin-bottom: 3%;
+        }
+        & p {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            color: #e8e8e8;
+            line-height: 1.5;
+            margin-top: 7%;
+        }
+        & a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            background-color: #5474fd;
+            font-family: 'Aleo', serif;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.075em;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 3%;
+            margin-top: 7%;
+            &:hover {
+                background-color: #0e3689;
+                transition: .3s;
+            }
+        }
+    }
+    &__photo {
+        width: 39%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 3%;
+        & img {
+            width: 100%;
+            height: 53%;
+            max-width: 320px;
+        }
+        &-second {
+            margin-left: 39%;
+            margin-top: 1%;
+        }
     }
 }
