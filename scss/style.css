@@ -315,4 +315,84 @@
   color: #e8e8e8;
   margin-top: 9%;
 }
+
+.spain-first, .spain-second {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/spain1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10% 12%;
+}
+
+.spain-first__text, .spain-second__text {
+  width: 540px;
+  opacity: 0.9;
+  background-color: #232323;
+  padding: 5% 3%;
+}
+
+.spain-first__text .text, .spain-second__text .text {
+  font-weight: 400;
+  color: #ffffff;
+  width: 100%;
+  margin-bottom: 7%;
+}
+
+.spain-first__text .text_top, .spain-second__text .text_top {
+  font-size: 20px;
+  letter-spacing: 0.075em;
+}
+
+.spain-first__text .text_middle, .spain-second__text .text_middle {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.spain-first__text .text_bottom, .spain-second__text .text_bottom {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.spain-first a, .spain-second a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 225px;
+  height: 60px;
+  background-color: #5474fd;
+  font-family: 'Aleo', serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.spain-first a:hover, .spain-second a:hover {
+  background-color: #0e3689;
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 1;
+}
+
+.spain-second {
+  padding: 10% 13%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 /*# sourceMappingURL=style.css.map */

@@ -219,3 +219,67 @@
         }
     }
 }
+
+.spain-first {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/spain1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10% 12%;
+    &__text {
+        width: 540px;
+        opacity: 0.9;
+        background-color: #232323;
+        padding: 5% 3%;
+        .text {
+            font-weight: 400;
+            color: #ffffff;
+            width: 100%;
+            margin-bottom: 7%;
+            &_top {
+                font-size: 20px;
+                letter-spacing: 0.075em;
+            }
+            &_middle {
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+            &_bottom {
+                font-size: 16px;
+                line-height: 1.7;
+            }
+        }
+    }
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 225px;
+        height: 60px;
+        background-color: #5474fd;
+        font-family: 'Aleo', serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.075em;
+        text-decoration: none;
+        color: #ffffff;
+        &:hover {
+            background-color: #0e3689;
+            transition: .3s;
+            opacity: 1;
+        }
+    }
+}
+
+.spain-second {
+    @extend .spain-first;
+    padding: 10% 13%;
+    justify-content: flex-end;
+    &__text {
+        @extend .spain-first__text;
+    }
+}
