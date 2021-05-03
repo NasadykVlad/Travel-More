@@ -1,5 +1,6 @@
 @import "_media.scss";
 @import "_mixins.scss";
+@import "_variables.scss";
 * {
     margin: 0;
     padding: 0;
@@ -8,31 +9,27 @@
 }
 
 .header {
-    width: 100%;
+    width: $width;
     height: 100vh;
     padding: 20% 0%;
-    display: flex;
-    justify-content: center;
+    @include flex;
     flex-wrap: wrap;
     text-align: center;
     background-image: url("../img/background_1.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include back_img;
     & h1 {
-        width: 100%;
+        width: $width;
         font-size: 48px;
+        @include paragraph;
         font-weight: 700;
-        text-transform: uppercase;
+        text-transform: $upper;
         letter-spacing: 0.1em;
-        color: #ffffff;
     }
     &__p-top {
-        width: 100%;
+        width: $width;
         font-size: 22px;
-        font-weight: 400;
+        @include paragraph;
         letter-spacing: 0.31em;
-        color: #ffffff;
         margin-top: .4%;
     }
     & form {
@@ -43,12 +40,12 @@
         & input {
             background-color: #ffffff;
             border: none;
-            width: 100%;
+            width: $width;
             padding-left: 17%;
             font-size: 20px;
             &::placeholder {
                 font-size: 14px;
-                font-weight: 400;
+                @include paragraph;
                 letter-spacing: 0.2em;
                 color: #999999;
             }
@@ -57,12 +54,11 @@
             width: 25%;
             border: 2px solid #ffffff;
             font-size: 14px;
-            font-weight: 400;
-            text-transform: uppercase;
+            @include paragraph;
+            text-transform: $upper;
             letter-spacing: 0.1em;
-            color: #ffffff;
             background-color: #5474fd;
-            display: flex;
+            @include flex;
             justify-content: space-evenly;
             align-items: center;
             &:hover {
@@ -76,11 +72,10 @@
         }
     }
     & span {
-        width: 100%;
+        width: $width;
         font-size: 14px;
-        font-weight: 400;
+        @include paragraph;
         letter-spacing: 0.2em;
-        color: #ffffff;
         margin-top: 6%;
     }
     &__scroll {
@@ -88,8 +83,8 @@
         margin-bottom: 4%;
     }
     &__nav {
-        display: flex;
-        width: 100%;
+        @include flex;
+        width: $width;
         background-color: #5474fd;
         padding: 2% 0;
         justify-content: space-around;
@@ -99,7 +94,7 @@
             font-family: 'Josefin Sans';
             font-size: 24px;
             font-weight: 700;
-            text-transform: uppercase;
+            text-transform: $upper;
             letter-spacing: 0.1em;
             color: #ffffff;
         }
@@ -114,9 +109,8 @@
                 & a {
                     text-decoration: none;
                     font-size: 14px;
-                    font-weight: 400;
-                    text-transform: uppercase;
-                    color: #ffffff;
+                    @include paragraph;
+                    text-transform: $upper;
                     &:hover {
                         color: #151515;
                         transition: .4s;
@@ -128,14 +122,11 @@
 }
 
 .places {
-    width: 100%;
+    width: $width;
     padding: 9% 5%;
     background-image: url("../img/places.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
+    @include back_img;
+    @include flex;
     align-items: center;
     &__text {
         display: flex;
@@ -144,32 +135,29 @@
         padding-top: 2%;
         & h2 {
             font-family: 'Aleo', serif;
-            width: 100%;
+            width: $width;
             font-size: 36px;
-            font-weight: 400;
-            color: #ffffff;
+            @include paragraph;
             margin-bottom: 3%;
         }
         & p {
-            width: 100%;
-            font-size: 16px;
-            font-weight: 400;
+            width: $width;
+            font-size: $size;
+            @include paragraph;
             letter-spacing: 0.1em;
-            color: #e8e8e8;
+            color: #fff2f2;
             line-height: 1.5;
             margin-top: 7%;
         }
         & a {
-            display: flex;
-            justify-content: center;
+            @include flex;
             align-items: center;
             width: 40%;
             background-color: #5474fd;
             font-family: 'Aleo', serif;
-            font-size: 16px;
-            font-weight: 400;
+            font-size: $size;
+            @include paragraph;
             letter-spacing: 0.075em;
-            color: #ffffff;
             text-decoration: none;
             padding: 3%;
             margin-top: 7%;
@@ -185,7 +173,7 @@
         flex-wrap: wrap;
         margin-left: 3%;
         & img {
-            width: 100%;
+            width: $width;
             height: 53%;
             max-width: 320px;
         }
@@ -197,9 +185,8 @@
 }
 
 .option {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: $width;
+    @include flex;
     background-color: #333333;
     padding: 3% 0;
     & article {
@@ -211,9 +198,9 @@
         & a {
             text-align: center;
             font-family: 'Aleo', serif;
-            width: 100%;
+            width: $width;
             font-size: 36px;
-            font-weight: 400;
+            @include paragraph;
             color: #e8e8e8;
             margin-top: 9%;
             text-decoration: none;
@@ -226,13 +213,11 @@
 }
 
 .spain-first {
-    width: 100%;
+    width: $width;
     display: flex;
     align-items: center;
     background-image: url("../img/spain1.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include back_img;
     padding: 10% 12%;
     &__text {
         width: 540px;
@@ -240,9 +225,8 @@
         background-color: #232323;
         padding: 5% 3%;
         .text {
-            font-weight: 400;
-            color: #ffffff;
-            width: 100%;
+            @include paragraph;
+            width: $width;
             margin-bottom: 7%;
             &_top {
                 font-size: 20px;
@@ -250,28 +234,26 @@
             }
             &_middle {
                 font-size: 20px;
-                text-transform: uppercase;
+                text-transform: $upper;
             }
             &_bottom {
-                font-size: 16px;
+                font-size: $size;
                 line-height: 1.7;
             }
         }
     }
     & a {
-        display: flex;
-        justify-content: center;
+        @include flex;
         align-items: center;
         width: 225px;
         height: 60px;
         background-color: #5474fd;
         font-family: 'Aleo', serif;
-        font-size: 16px;
-        font-weight: 400;
-        text-transform: uppercase;
+        font-size: $size;
+        @include paragraph;
+        text-transform: $upper;
         letter-spacing: 0.075em;
         text-decoration: none;
-        color: #ffffff;
         &:hover {
             background-color: #0e3689;
             transition: .3s;
@@ -291,22 +273,18 @@
 }
 
 .people {
-    width: 100%;
+    width: $width;
     padding: 10% 0 10% 0;
-    display: flex;
-    justify-content: center;
+    @include flex;
     align-items: center;
     flex-wrap: wrap;
     background-image: url("../img/man.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include back_img;
     & h2 {
         text-align: center;
-        width: 100%;
+        width: $width;
         font-size: 36px;
-        font-weight: 400;
-        color: #ffffff;
+        @include paragraph;
         margin-bottom: 6%;
     }
     &__man {
@@ -318,7 +296,7 @@
         &_image {
             width: 40%;
             & img {
-                width: 100%;
+                width: $width;
             }
         }
         &_text {
@@ -326,14 +304,14 @@
             padding: 3% 6%;
             & h4 {
                 font-size: 20px;
-                font-weight: 400;
-                text-transform: uppercase;
+                @include paragraph;
+                text-transform: $upper;
                 color: #fefefe;
                 margin-bottom: 6%;
             }
             & p {
-                font-weight: 400;
-                font-size: 16px;
+                @include paragraph;
+                font-size: $size;
                 color: #e8e8e8;
                 line-height: 1.5;
             }
@@ -345,6 +323,7 @@
                 bottom: 9px;
                 &:hover {
                     color: white;
+                    transition: .4s;
                 }
             }
         }
@@ -352,27 +331,26 @@
 }
 
 .footer {
-    width: 100%;
-    display: flex;
+    width: $width;
+    @include flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     background-color: #232323;
     padding: 8% 0 3% 0;
     & span {
-        width: 100%;
+        width: $width;
         color: #ffffff;
         text-align: center;
     }
     &__first-span {
         font-size: 24px;
         font-weight: 700;
-        text-transform: uppercase;
+        text-transform: $upper;
         letter-spacing: 0.14em;
         margin-bottom: 1%;
     }
     &__second-span {
-        font-size: 16px;
+        font-size: $size;
         font-weight: 400;
         letter-spacing: 0.1em;
         margin-bottom: 2.5%;

@@ -1,0 +1,15 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin back_img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin paragraph {
+    font-weight: 400;
+    color: #ffffff;
+}
