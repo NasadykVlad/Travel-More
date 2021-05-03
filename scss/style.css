@@ -653,6 +653,9 @@ body {
     width: 100%;
     margin: 5% 0;
   }
+  .spain-second {
+    padding: 10% 12%;
+  }
   .people {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
