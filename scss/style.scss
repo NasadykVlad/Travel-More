@@ -10,8 +10,7 @@
 
 .header {
     width: $width;
-    height: 100vh;
-    padding: 20% 0%;
+    padding: 20% 0 0 0;
     @include flex;
     flex-wrap: wrap;
     text-align: center;
@@ -35,7 +34,7 @@
     & form {
         display: flex;
         width: 42%;
-        height: 35%;
+        height: 50px;
         margin-top: 4%;
         & input {
             background-color: #ffffff;
@@ -82,22 +81,23 @@
         margin-top: 1%;
         margin-bottom: 4%;
     }
-    &__nav {
-        @include flex;
-        width: $width;
-        background-color: #5474fd;
-        padding: 2% 0;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        & p {
-            font-family: 'Josefin Sans';
-            font-size: 24px;
-            font-weight: 700;
-            text-transform: $upper;
-            letter-spacing: 0.1em;
-            color: #ffffff;
-        }
+}
+
+.navbar {
+    @include flex;
+    width: $width;
+    background-color: #5474fd;
+    padding: 2% 0;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    & p {
+        font-family: 'Josefin Sans';
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: $upper;
+        letter-spacing: 0.1em;
+        color: #ffffff;
     }
     & nav {
         width: 37%;
