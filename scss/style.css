@@ -565,7 +565,7 @@ body {
   color: #5170f2;
 }
 
-@media (min-width: 413px) and (max-width: 575.98px) {
+@media (min-width: 410px) and (max-width: 575.98px) {
   .header {
     width: 105%;
     padding: 27% 0 10% 0;
