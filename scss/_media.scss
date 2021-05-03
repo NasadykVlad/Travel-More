@@ -1,7 +1,7 @@
-@media (min-width: 410px) and (max-width: 575.98px) {
+@media (max-width: 575.98px) {
     .header {
-        width: 105%;
-        padding: 27% 0 10% 0;
+        padding: 75% 0 10% 0;
+        height: 100vh;
         & h1 {
             font-size: 40px;
         }
@@ -10,7 +10,7 @@
             margin-top: 3%;
         }
         & form {
-            width: 70%;
+            width: 75%;
             height: 90px;
             flex-wrap: wrap;
             margin: 9% 0;
@@ -26,9 +26,12 @@
                 margin-top: 4%;
             }
         }
+        & img {
+            width: 3%;
+            height: 3%;
+        }
     }
     .navbar {
-        width: 105%;
         flex-wrap: wrap;
         padding: 7% 3%;
         & p {
@@ -50,7 +53,6 @@
         }
     }
     .places {
-        width: 105%;
         flex-wrap: wrap;
         &__text {
             width: 100%;
@@ -69,18 +71,13 @@
         }
     }
     .option {
-        width: 105%;
         flex-wrap: wrap;
         & article {
             width: 100%;
             margin: 5% 0;
         }
     }
-    .spain-first {
-        width: 105%;
-    }
     .people {
-        width: 105%;
         flex-wrap: wrap;
         &__man_image {
             width: 100%;
@@ -90,7 +87,6 @@
         }
     }
     .footer {
-        width: 105%;
         &__nav {
             width: 70%;
             margin-top: 4%;

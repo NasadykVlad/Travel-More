@@ -565,10 +565,10 @@ body {
   color: #5170f2;
 }
 
-@media (min-width: 410px) and (max-width: 575.98px) {
+@media (max-width: 575.98px) {
   .header {
-    width: 105%;
-    padding: 27% 0 10% 0;
+    padding: 75% 0 10% 0;
+    height: 100vh;
   }
   .header h1 {
     font-size: 40px;
@@ -578,7 +578,7 @@ body {
     margin-top: 3%;
   }
   .header form {
-    width: 70%;
+    width: 75%;
     height: 90px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -595,8 +595,11 @@ body {
     margin: 0 auto;
     margin-top: 4%;
   }
+  .header img {
+    width: 3%;
+    height: 3%;
+  }
   .navbar {
-    width: 105%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 7% 3%;
@@ -620,7 +623,6 @@ body {
     font-size: 13px;
   }
   .places {
-    width: 105%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -644,7 +646,6 @@ body {
     margin: 10% 0;
   }
   .option {
-    width: 105%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -652,11 +653,7 @@ body {
     width: 100%;
     margin: 5% 0;
   }
-  .spain-first, .spain-second {
-    width: 105%;
-  }
   .people {
-    width: 105%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -665,9 +662,6 @@ body {
   }
   .people__man_text {
     width: 100%;
-  }
-  .footer {
-    width: 105%;
   }
   .footer__nav {
     width: 70%;
