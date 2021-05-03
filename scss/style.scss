@@ -277,9 +277,68 @@
 
 .spain-second {
     @extend .spain-first;
+    background-image: url("../img/spain2.png");
     padding: 10% 13%;
     justify-content: flex-end;
     &__text {
         @extend .spain-first__text;
+    }
+}
+
+.people {
+    width: 100%;
+    padding: 10% 0 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("../img/man.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    & h2 {
+        text-align: center;
+        width: 100%;
+        font-size: 36px;
+        font-weight: 400;
+        color: #ffffff;
+        margin-bottom: 6%;
+    }
+    &__man {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 74%;
+        background-color: #333333;
+        &_image {
+            width: 40%;
+            & img {
+                width: 100%;
+            }
+        }
+        &_text {
+            width: 60%;
+            padding: 3% 6%;
+            & h4 {
+                font-size: 20px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: #fefefe;
+                margin-bottom: 6%;
+            }
+            & p {
+                font-weight: 400;
+                font-size: 16px;
+                color: #e8e8e8;
+                line-height: 1.5;
+            }
+            .fa-quote-left {
+                color: #5474fd;
+                font-size: 22px;
+                margin-right: 3%;
+                position: relative;
+                bottom: 9px;
+            }
+        }
     }
 }
