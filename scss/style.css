@@ -6,6 +6,10 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .header {
   width: 100%;
   padding: 20% 0 0 0;
@@ -559,5 +563,115 @@
   -webkit-transition: .2s;
   transition: .2s;
   color: #5170f2;
+}
+
+@media (min-width: 413px) and (max-width: 575.98px) {
+  .header {
+    width: 105%;
+    padding: 27% 0 10% 0;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+  .header p {
+    font-size: 25px;
+    margin-top: 3%;
+  }
+  .header form {
+    width: 70%;
+    height: 90px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 9% 0;
+  }
+  .header form input {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    padding-left: 4%;
+  }
+  .header form button {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 4%;
+  }
+  .navbar {
+    width: 105%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 7% 3%;
+  }
+  .navbar p {
+    width: 100%;
+    font-size: 20px;
+  }
+  .navbar nav {
+    width: 100%;
+  }
+  .navbar nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navbar nav ul li {
+    width: 100%;
+    margin-top: 3%;
+  }
+  .navbar nav ul li a {
+    font-size: 13px;
+  }
+  .places {
+    width: 105%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .places__text {
+    width: 100%;
+  }
+  .places__text a {
+    text-align: center;
+    margin: 8% auto;
+  }
+  .places__photo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .places__photo-second {
+    margin: 10% 0;
+  }
+  .option {
+    width: 105%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .option article {
+    width: 100%;
+    margin: 5% 0;
+  }
+  .spain-first, .spain-second {
+    width: 105%;
+  }
+  .people {
+    width: 105%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .people__man_image {
+    width: 100%;
+  }
+  .people__man_text {
+    width: 100%;
+  }
+  .footer {
+    width: 105%;
+  }
+  .footer__nav {
+    width: 70%;
+    margin-top: 4%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

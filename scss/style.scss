@@ -1,4 +1,3 @@
-@import "_media.scss";
 @import "_mixins.scss";
 @import "_variables.scss";
 * {
@@ -6,6 +5,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .header {
@@ -369,3 +372,5 @@
         }
     }
 }
+
+@import "_media.scss";
