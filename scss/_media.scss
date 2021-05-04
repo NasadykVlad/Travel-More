@@ -1,106 +1,288 @@
-@media (max-width: 575.98px) {
-    .header {
-        padding: 75% 0 10% 0;
-        height: 100vh;
-        & h1 {
-            font-size: 40px;
-        }
-        & p {
-            font-size: 25px;
-            margin-top: 3%;
-        }
-        & form {
-            width: 75%;
-            height: 90px;
-            flex-wrap: wrap;
-            margin: 9% 0;
-            & input {
-                width: 100%;
-                padding: 0;
-                margin: 0 auto;
-                padding-left: 4%;
+    @media (max-width: 406.98px) {
+        .header {
+            padding: 75% 0 10% 0;
+            height: 100vh;
+            & h1 {
+                font-size: 40px;
             }
-            & button {
-                width: 40%;
-                margin: 0 auto;
-                margin-top: 4%;
+            & p {
+                font-size: 25px;
+                margin-top: 3%;
             }
-        }
-        & img {
-            width: 3%;
-            height: 3%;
-        }
-    }
-    .navbar {
-        flex-wrap: wrap;
-        padding: 7% 3%;
-        & p {
-            width: 100%;
-            font-size: 20px;
-        }
-        & nav {
-            width: 100%;
-            & ul {
+            & form {
+                width: 75%;
+                height: 90px;
                 flex-wrap: wrap;
-                & li {
+                margin: 9% 0;
+                & input {
                     width: 100%;
-                    margin-top: 3%;
-                    & a {
-                        font-size: 13px;
+                    padding: 0;
+                    margin: 0 auto;
+                    padding-left: 4%;
+                }
+                & button {
+                    width: 40%;
+                    margin: 0 auto;
+                    margin-top: 4%;
+                }
+            }
+        }
+        .navbar {
+            flex-wrap: wrap;
+            padding: 7% 3%;
+            & p {
+                width: 100%;
+                font-size: 20px;
+            }
+            & nav {
+                width: 100%;
+                & ul {
+                    flex-wrap: wrap;
+                    & li {
+                        width: 100%;
+                        margin-top: 3%;
+                        & a {
+                            font-size: 13px;
+                        }
                     }
                 }
             }
         }
-    }
-    .places {
-        flex-wrap: wrap;
-        &__text {
-            width: 100%;
-            & a {
-                text-align: center;
-                margin: 8% auto;
+        .places {
+            flex-wrap: wrap;
+            &__text {
+                width: 100%;
+                & a {
+                    text-align: center;
+                    margin: 8% auto;
+                }
+            }
+            &__photo {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                &-second {
+                    margin: 10% 0;
+                }
             }
         }
-        &__photo {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            &-second {
-                margin: 10% 0;
+        .option {
+            flex-wrap: wrap;
+            & article {
+                width: 100%;
+                margin: 5% 0;
+            }
+        }
+        .spain-second {
+            padding: 10% 12%;
+        }
+        .people {
+            flex-wrap: wrap;
+            &__man_image {
+                width: 100%;
+            }
+            &__man_text {
+                width: 100%;
+            }
+        }
+        .footer {
+            &__nav {
+                width: 70%;
+                margin-top: 4%;
             }
         }
     }
-    .option {
-        flex-wrap: wrap;
-        & article {
-            width: 100%;
-            margin: 5% 0;
+    
+    @media (min-width: 407px) and (max-width: 575.98px) {
+        .header {
+            padding: 50% 0 10% 0;
+            height: 100vh;
+            & h1 {
+                font-size: 40px;
+            }
+            & p {
+                font-size: 25px;
+                margin-top: 3%;
+            }
+            & form {
+                width: 45%;
+                height: 90px;
+                flex-wrap: wrap;
+                margin: 9% 0;
+                & input {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0 auto;
+                    padding-left: 4%;
+                }
+                & button {
+                    width: 60%;
+                    margin: 0 auto;
+                    margin-top: 4%;
+                }
+            }
+        }
+        .navbar {
+            flex-wrap: wrap;
+            padding: 7% 3%;
+            & p {
+                width: 100%;
+                font-size: 20px;
+            }
+            & nav {
+                width: 100%;
+                & ul {
+                    flex-wrap: wrap;
+                    & li {
+                        width: 100%;
+                        margin-top: 3%;
+                        & a {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        .places {
+            flex-wrap: wrap;
+            &__text {
+                width: 100%;
+                & a {
+                    text-align: center;
+                    margin: 8% auto;
+                }
+            }
+            &__photo {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                &-second {
+                    margin: 10% 0;
+                }
+            }
+        }
+        .option {
+            flex-wrap: wrap;
+            & article {
+                width: 100%;
+                margin: 5% 0;
+            }
+        }
+        .spain-second {
+            padding: 10% 12%;
+        }
+        .people {
+            flex-wrap: wrap;
+            &__man_image {
+                width: 100%;
+            }
+            &__man_text {
+                width: 100%;
+            }
+        }
+        .footer {
+            &__nav {
+                width: 70%;
+                margin-top: 4%;
+            }
         }
     }
-    .spain-second {
-        padding: 10% 12%;
-    }
-    .people {
-        flex-wrap: wrap;
-        &__man_image {
-            width: 100%;
+    
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .header {
+            padding: 30% 0 10% 0;
+            height: 100vh;
+            & h1 {
+                font-size: 40px;
+            }
+            & p {
+                font-size: 25px;
+                margin-top: 3%;
+            }
+            & form {
+                width: 80%;
+                height: 50px;
+            }
         }
-        &__man_text {
-            width: 100%;
+        .navbar {
+            flex-wrap: wrap;
+            padding: 7% 3%;
+            & p {
+                width: 100%;
+                font-size: 20px;
+            }
+            & nav {
+                width: 100%;
+                & ul {
+                    flex-wrap: wrap;
+                    & li {
+                        width: 100%;
+                        margin-top: 3%;
+                        & a {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        .places {
+            flex-wrap: wrap;
+            &__text {
+                width: 100%;
+                & a {
+                    text-align: center;
+                    margin: 8% auto;
+                }
+            }
+            &__photo {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                & img {
+                    max-width: 350px;
+                }
+                &-second {
+                    margin: 10% 0;
+                }
+            }
+        }
+        .option {
+            & article {
+                width: 30%;
+            }
+        }
+        .footer {
+            &__nav {
+                width: 50%;
+                margin-top: 4%;
+            }
         }
     }
-    .footer {
-        &__nav {
-            width: 70%;
-            margin-top: 4%;
+    
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .header {
+            padding: 30% 0 10% 0;
+            height: 100vh;
+            & h1 {
+                font-size: 40px;
+            }
+            & p {
+                font-size: 25px;
+                margin-top: 3%;
+            }
+            & form {
+                width: 80%;
+                height: 50px;
+            }
+        }
+        .footer {
+            &__nav {
+                width: 30%;
+                margin-top: 4%;
+            }
         }
     }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {}
-
-@media (min-width: 768px) and (max-width: 991.98px) {}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {}
-
-@media (min-width: 1200px) {}
+    
+    @media (min-width: 992px) and (max-width: 1199.98px) {}
+    
+    @media (min-width: 1200px) {}
