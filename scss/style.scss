@@ -50,6 +50,7 @@ body {
             width: $width;
             padding-left: 17%;
             font-size: 20px;
+            outline: none;
             &::placeholder {
                 font-size: 14px;
                 @include paragraph;

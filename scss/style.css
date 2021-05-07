@@ -67,6 +67,7 @@ body {
   width: 100%;
   padding-left: 17%;
   font-size: 20px;
+  outline: none;
 }
 
 .header form input::-webkit-input-placeholder {
